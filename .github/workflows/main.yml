@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+      - develop
 jobs:
   build:
     uses: ./.github/workflows/javabuild.yml
