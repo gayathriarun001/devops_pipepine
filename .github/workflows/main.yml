@@ -11,3 +11,4 @@ jobs:
   docker:
     needs: build
     uses: ./.github/workflows/imagepush.yml
+    secrets: inherit
