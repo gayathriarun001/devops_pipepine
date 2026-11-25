@@ -25,6 +25,8 @@ jobs:
 
       - name: Build with Maven
         run: mvn clean install 
+      - name: maven deploy
+        run: mvn deploy -P nexus-deploy -DskipTests
       - name: List target directory (debug)
         run: ls -l target
 
