@@ -7,13 +7,21 @@
   <artifactId>spring-petclinic</artifactId>
   <version>3.2.0-SNAPSHOT</version>
   
-  <distributionManagement>
+ 
+<distributionManagement>
     <snapshotRepository>
-        <id>snapshots</id>
-        <name>a0mhlxtoyc29l-artifactory-primary-0-snapshots</name>
-        <url>https://cncf.jfrog.io/artifactory/maven-remote-libs-snapshot-local</url>
+        <id>nexus</id>
+        <name>Nexus Snapshot Repository</name>
+        <url>http://54.241.55.186:8081/repository/maven-snapshots/</url>
     </snapshotRepository>
-  </distributionManagement>
+
+    <repository>
+        <id>nexus</id>
+        <name>Nexus Release Repository</name>
+        <url>http://54.241.55.186:8081/repository/maven-releases/</url>
+    </repository>
+</distributionManagement>
+
 
   <parent>
     <groupId>org.springframework.boot</groupId>
